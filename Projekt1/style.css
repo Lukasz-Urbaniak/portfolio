@@ -1,0 +1,262 @@
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 24px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: skyblue;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: white;
+    padding: 2em 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+    font-size: 1em;
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #FFC502;
+}
+
+i {
+    font-size: 2em;
+}
+
+i.socials {
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+
+}
+
+strong {
+    color: #FFC502;
+}
+
+
+button {
+    position: absolute;
+    border: solid #FFC502;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background-color: #FFC502;
+}
+
+/* Nav menu */
+nav {
+    display: flex;
+    padding: 2em 0;
+}
+
+nav ul li {
+    font-size: 1.5em;
+}
+
+/* Header welcome */
+header {
+    background-image: url('img/chairs-filter.jpg');
+    color: white;
+    text-align: center;
+    height: 500px;
+}
+
+header h1 {
+    font-size: 4em;
+    color: #FFC502;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+/* Contact & CV bar */
+
+.bar .row {
+    height: 8em;
+    justify-content: center;
+}
+
+.bar ul li {
+    border: solid #FFC502;
+    margin: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    color: #FFC502;
+}
+
+.bar ul li:hover {
+    border: solid #FFC502;
+    margin: 2em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background-color: #FFC502;
+}
+
+/* About me */
+.about_me .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_me .data {
+    border-right: dotted #FFC502;
+}
+
+.face img {
+    padding: 2em;
+    border-radius: 50%;
+}
+
+/* Skills */
+.skills .row {
+    text-align: center;
+}
+
+.skills .row .col-md-4:nth-child(2) {
+    border-left: dotted #FFC502;
+    border-right: dotted #FFC502;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+    color: black;
+    font-weight: 800;
+}
+
+.photo1 {
+    background-image: url(img/design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.photo2 {
+    background-image: url(img/food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo3 {
+    background-image: url(img/flowers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo4 {
+    background-image: url(img/chair.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.photo5 {
+    background-image: url(img/interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Contact us */
+.contact-us .row {
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.contact-us .data {
+    display: flex;
+    background-color: #FFC502;
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact-us p {
+    font-size: 1.5em;
+    color: white;
+}
+
+.contact-us h3 {
+    font-size: 2em;
+    color: white;
+}
+
+.contact-us i {
+    color: white;
+}
+
+.contact-us .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+}
+
+input,
+textarea {
+    width: 90%;
+    border: solid black;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    margin: 0.5em;
+}
+
+/* Animation */
+@keyframes move {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.logo {
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+}
